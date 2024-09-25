@@ -104,6 +104,8 @@ isMeasuring 값이 true 일 때 **stopMeasuring 함수**를 호출하면 isMeasu
 뇌파 데이터의 leftThetaIndicatorValue, rightThetaIndicatorValue, leftAlphaIndicatorValue, ... ,
 leftRelaxationIndicatorValue, rightRelaxationIndicatorValue, unbalanceIndicatorValue 까지의 프로퍼티는 크기 판정값이 있습니다.
 
+[<img alt="alt_text" width="40px" src="[images/image.PNG](https://github.com/omnicns/OmnifitBrainSample_AOS/blob/main/img.png)" />]
+
 ![img.png](img.png)
 
 * unbalanceIndicatorValue를 제외한 나머지 프로퍼티는 5가 표준이며 0에 수렴할수록 매우 낮은 상태를 의미하고,
