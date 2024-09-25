@@ -105,7 +105,7 @@ The details of the set EEG measurement data are as follows.
 
 The properties up to leftThetaIndicatorValue, rightThetaIndicatorValue, leftAlphaIndicatorValue, ..., leftRelaxationIndicatorValue, rightRelaxationIndicatorValue, and unbalanceIndicatorValue of Result data have size values.
 
-![img.png](img.png)
+![img](https://github.com/user-attachments/assets/b8c73365-4986-447b-9c7c-6614348d0a89)
 
 * For all other properties except unbalanceIndicatorValue, 5 is the standard, and the more it converges to 0, the lower the state. Converging to 10 means a very high state.
 * As for unbalanceIndicatorValue, 5 means left and right brain balance, and as it converges to 0, it means that the right brain is activated, and as it converges to 10, it means that the left brain is activated.
