@@ -29,14 +29,13 @@ The functions provided by the library are organized below.
 
 <br/>
 
-Calling the **startMeasuring() function** will start the measurement and change the **isMeasuring value** to true<br/>
-**stopMeasuring function** is called when the isMeasuring value is true, the isMeasuring value changes to false and the measurement ends.
-Alternatively, the measurement ends when the measurement time passed as a factor is over.<br/>
-When measurement starts, LiveData<Result> named **'result'** is updated every 2 seconds.<br/>
-The details of the EEG measurement data set by the Result data class property are as follows.
+When you call the **startMeasuring function**, the measurement starts and the **isMeasuring value** changes to true.<br/>
+When the isMeasuring value is true, if you call the **stopMeasuring function**, the isMeasuring value changes to false and the measurement ends.
+Or, when the measurement time passed as an argument ends, the measurement ends.<br/>
+When the measurement starts, [LiveData] called **measurementResult** is updated every 2 seconds.<br/>
+The details of the set EEG measurement data are as follows.
 
-
-### Acquiring Result data
+### Obtaining measurementResult [LiveData]
 
 |**Property**|**Data Classification**|**Definition**|**Range**|
 |:---:|:---:|:---:|:---:|
