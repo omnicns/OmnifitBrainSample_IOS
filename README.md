@@ -7,6 +7,7 @@
 3. Info.plist에 Bluetooth 권한을 추가합니다<br/>
    * Privacy - Bluetooth Always Usage Description<br/>
    * Privacy - Bluetooth Peripheral Usage Description<br/>
+4. BrainManager 의 경우 자신에 맞게끔 Custom 해서 사용가능하다.
    
 ## 개요
 
