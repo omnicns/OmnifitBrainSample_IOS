@@ -30,9 +30,8 @@ The functions provided by the library are organized below.
 <br/>
 
 When you call the **startMeasuring function**, the measurement starts and the **isMeasuring value** changes to true.<br/>
-When the isMeasuring value is true, if you call the **stopMeasuring function**, the isMeasuring value changes to false and the measurement ends.
-Or, when the measurement time passed as an argument ends, the measurement ends.<br/>
-When the measurement starts, [LiveData] called **measurementResult** is updated every 2 seconds.<br/>
+When the **stopMeasuring function** is called when the isMeasuring value is true, the isMeasuring value changes to false and the measurement ends.<br/>
+When the measurement starts, the [LiveData] called **measurementResult** is updated every 2 seconds.<br/>
 The details of the set EEG measurement data are as follows.
 
 ### Obtaining measurementResult [LiveData]
