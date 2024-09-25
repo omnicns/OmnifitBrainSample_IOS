@@ -25,7 +25,7 @@ The functions provided by the library are organized below.
 ** The state indicating whether it is being searched, being connected, being measured, the state of the device, and the measured EEG data are all provided using Android's LiveData library.**
 
 <br/>
-### Starting/terminating Measurement
+### Starting / terminating Measurement
 
 <br/>
 
