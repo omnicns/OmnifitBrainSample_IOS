@@ -28,8 +28,7 @@ LiveData 라이브러리를 사용하여 제공하고 있습니다.**
 ### 측정 시작 / 종료
 
 **startMeasuring 함수**를 호출하면 측정을 시작되고 **isMeasuring 값**이 true로 변경됩니다<br/>
-isMeasuring 값이 true 일 때 **stopMeasuring 함수**를 호출하면 isMeasuring 값이 false로 바뀌며 측정이 종료됩니다.
-또는 인자로 넘긴 측정 시간이 종료되면 측정을 종료합니다.<br/>
+isMeasuring 값이 true 일 때 **stopMeasuring 함수**를 호출하면 isMeasuring 값이 false로 바뀌며 측정이 종료됩니다.<br/>
 측정이 시작되면 2초 단위로 **measurementResult**라는 [LiveData]가 갱신됩니다.<br/>
 설정된 뇌파 측정 데이터에 대한 자세한 내용은 다음과 같습니다.
 
