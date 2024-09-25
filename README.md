@@ -1,7 +1,14 @@
+## 앱 셋팅
+1. BrainSample > Frameworks 를 Copy 하여 Project 에 추가
+2. Targets > General > Frameworks,Libararies, and Embedded Content + 클릭 > Add Files.. >  BrainLib.xcframework 추가
+3. info.list bluetooth 권한 추가
+   (Privacy - Bluetooth Always Usage Description, Privacy - Bluetooth Peripheral Usage Description)
+
+   
 # OmnifitBrain
 > 영어로 읽기: [ENGLISH](README.en.md)
 
-## 개요s
+## 개요
 
 본 라이브러리는 옴니핏 제품의 브레인 제품군에 해당하는 장치를 사용하여 
 서비스를 제공할 수 있는 안드로이드 앱을 만들 수 있도록 지원하기 위한 것입니다.
