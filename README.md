@@ -1,10 +1,9 @@
 ## 앱 셋팅
 1. BrainSample > Frameworks를 복사하여 프로젝트에 추가합니다.
 2. Targets > General > Frameworks, Libraries, and Embedded Content로 이동하여 + 버튼을 클릭한 후 BrainLib.xcframework를 추가합니다.
-3. Info.plist에 Bluetooth 권한을 추가합니다:
+3. Info.plist에 Bluetooth 권한을 추가합니다
    Privacy - Bluetooth Always Usage Description
    Privacy - Bluetooth Peripheral Usage Description
-
    
 # OmnifitBrain
 > 영어로 읽기: [ENGLISH](README.en.md)
