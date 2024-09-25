@@ -29,8 +29,8 @@ The functions provided by the library are organized below.
 
 <br/>
 
-Calling the **startMeasuring() function** of the ViewModel will start the measurement and change the **isMeasuring value** to true<br/>
-If the startMeasuring function is called again or the **stopMeasuring function** is called when the isMeasuring value is true, the isMeasuring value changes to false and the measurement ends.
+Calling the **startMeasuring() function** will start the measurement and change the **isMeasuring value** to true<br/>
+**stopMeasuring function** is called when the isMeasuring value is true, the isMeasuring value changes to false and the measurement ends.
 Alternatively, the measurement ends when the measurement time passed as a factor is over.<br/>
 When measurement starts, LiveData<Result> named **'result'** is updated every 2 seconds.<br/>
 The details of the EEG measurement data set by the Result data class property are as follows.
