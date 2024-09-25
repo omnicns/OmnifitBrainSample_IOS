@@ -1,6 +1,13 @@
 # OmnifitBrain
 > Read in Korean: [KOREAN](README.md)
 
+## App Settings
+1. Copy BrainSample > Frameworks and add it to your project.
+2. Go to Targets > General > Frameworks, Libraries, and Embedded Content, click the + button, and add BrainLib.xcframework.
+3. Add Bluetooth permission to Info.plist<br/>
+* Privacy - Bluetooth Always Usage Description<br/>
+* Privacy - Bluetooth Peripheral Usage Description<br/>
+
 ## Summary
 
 This library is to support creating Android apps that can provide services using a device corresponding to Brain headsets among Omnifit products.
