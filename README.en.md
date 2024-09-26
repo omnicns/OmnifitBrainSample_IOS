@@ -16,18 +16,35 @@ The functions provided by the library are organized below.
 
 * Scanning/Cancelling Brain Headsets
 * Connecting/Disconnecting Brain Headset
-* Scanning and Connecting Brain Headset in Sequential
 * Starting/terminating Measurement (Acquiring EEG Data)
-* Obtaining Brain Score
 * Obtaining Headset Information
 * Monitoring Headset Status; connectivity status, electrode sensor attachment status, battery remaining, and more.
 
 ** The state indicating whether it is being searched, being connected, being measured, the state of the device, and the measured EEG data are all provided using Android's LiveData library.**
 
 <br/>
-### Starting / terminating Measurement
+### Brain Device Scan / Cancel
+seconds : Stop scanning after timeout for argument value
+Scan : startScanning(for seconds: TimeInterval)
+Cancel : stopScanning()
+
+### Brain Device Connect / Unconnect
+Connect :
+            func connect(to device: CBPeripheral) {
+                subscribeToMeasurementPublishers() // Start measurement event subscription
+                brain?.connect(device)
+            }
+Reconnect : uuid: peripheral.identifier
+            reconnectBrainDevice(with: uuid)
+Unsubscribe :
+            private func unsubscribeToMeasurementPublishers() {
+                measurementEventSubscription?.cancel()
+                measurementEventSubscription = nil
+            }
 
 <br/>
+
+### Starting / terminating Measurement
 
 When you call the **startMeasuring function**, the measurement starts and the **isMeasuring value** changes to true.<br/>
 When the **stopMeasuring function** is called when the isMeasuring value is true, the isMeasuring value changes to false and the measurement ends.<br/>
@@ -112,185 +129,23 @@ The properties up to leftThetaIndicatorValue, rightThetaIndicatorValue, leftAlph
 
 <br/>
 
-#### startMeasuring() Function Parameters
-
-> measuringTime : measurement run time. 60 is declared as a default parameter.<br/>
-> eyeState      : state of whether the eyes are open or closed. CLOSED is declared as a default parameter.<br/>
-> onError       : A callback that is called when an error occurs. Throwable is passed as an argument.
-
-#### Usage Example
-
-```kotlin
-// Start device measurement
-viewModel.startMeasuring(measuringTime = 60, eyesState = Result.EyesState.CLOSED, onError = { throwable ->
-    runOnUiThread {
-      Toast.makeText(applicationContext, throwable.message.toString(), Toast.LENGTH_SHORT).show()
-    }
-})
-// End device measurement
-viewModel.stopMeasuring()
-// Check measurement status
-viewModel.isMeasuring.observe(this@SampleActivity) { value ->
-  if (value) {
-    // true -> 'Measuring'
-  } else {
-    // false -> 'Waiting'
-  }
-}
-// EEG data
-viewModel.result.observe(this@SampleActivity) { value ->
-    println("Result : $value")
-}
-```
+#### startMeasuring function parameters
+> eyeState: The state of the eye to be measured. There are two types: Opened and Closed. CLOSED is declared as the default parameter.<br/>
 
 <br/>
 
-### Obtaining Brain Score
-    
-You can get the brain score by calling the **getBrainScore() function** of the ViewModel.
-The function requires an ArrayList<Result> as an argument, and returns an Int value.
-<br/>
-However, IllegalArgumentException is thrown if the list passed as an argument is empty or the entire EEG data cannot be used because the device is worn incorrectly during measurement.
-Errors can be checked through the message property of the error object.
-
-#### getBrainScore() Function Parameters
-
-> results : ArrayList<Result> type parameter. While the measurement is in progress, collect the Result data class as an ArrayList and pass it as an argument.
-
-#### Usage Example
-```kotlin
-// resultList(Assume ArrayList<Result> is not empty)
-try {
-    val score = viewModel.getBrainScore(resultList)
-    println("[SCORE] : $score")
-} catch (e: IllegalArgumentException) {
-    println("[IllegalArgumentException] - error : ${e.message}")
-}
-```
-
-<br/>
-    
-### Obtaining Headset Information
-
-Once the connection with the device is established, you can get the **device serial number, measurement state transition time, and signal stability threshold**.<br/>
-When you call the following functions, the result is passed to the callback function.
-
-* Device serial number: A serial number assigned to the device
-* Measurement status conversion time: Measurement status conversion time value applied to the device
-* Signal stabilization reference value: EEG stabilization value recorded in the device
-
-#### Usage Example
-
-```kotlin
-// Device serial number
-viewModel.readSerialNo(block = { serialNumber ->
-    Toast.makeText(applicationContext, serialNumber, Toast.LENGTH_LONG).show()
-})
-
-// Measurement status conversion time
-viewModel.readMeasureStartChangeTime(block = { time ->
-    Toast.makeText(applicationContext, time, Toast.LENGTH_LONG).show()
-})
-
-// Signal stabilization reference value
-viewModel.readSignalStability(block = { signalStability ->
-    Toast.makeText(applicationContext, signalStability, Toast.LENGTH_LONG).show()
-})
-```
+### Obtaining device information
+When subscribing to device events (deviceEventPublisher), you can obtain device information from discoveredDevices.
 
 <br/>
 
-### Monitoring Headset Status
+### Monitoring device status
 
-You can use the following LiveData to determine the current state of your device.
+You can use the following LiveData to determine the current device status.
 
-* electrodeStatus : electrode sensor attachment status
-* batteryLevel : remaining battery status
-* eegStabilityValue : eeg stability status
-
-#### Electrode Sensor Attachment Status
-
-```kotlin
-/**
- * ALL_DETACHED -> all detached
- * LEFT_ELECTRODE_DETACHED -> left eeg sensor detached
- * RIGHT_ELECTRODE_DETACHED -> right eeg sensor detached
- * LEFT_EARPHONE_DETACHED -> left earphone detached
- * RIGHT_EARPHONE_DETACHED -> right earphone detached
- * ALL_ATTACHED -> all attached
- */
-viewModel.electrodeStatus.observe(this@SampleActivity) { state ->
-    when (state) {
-        Result.Electrode.ALL_DETACHED              -> {}
-        Result.Electrode.LEFT_ELECTRODE_DETACHED   -> {}
-        Result.Electrode.RIGHT_ELECTRODE_DETACHED  -> {}
-        Result.Electrode.LEFT_EARPHONE_DETACHED    -> {}
-        Result.Electrode.RIGHT_EARPHONE_DETACHED   -> {}
-        Result.Electrode.ALL_ATTACHED              -> {}
-    }
-}
-```
-
-<br/>
-
-#### Remaining Battery Status
-
-```kotlin
-/**
- * INSUFFICIENT -> device battery is low
- * SUFFICIENT -> device battery is sufficient
- */
-viewModel.batteryLevel.observe(this@SampleActivity) { level ->
-    when (level) {
-        Result.BatteryLevel.INSUFFICIENT -> {}
-        Result.BatteryLevel.SUFFICIENT   -> {}
-    }
-}
-```
-
-<br/>
-
-#### EEG Stability Status
-
-```kotlin
-/**
- * UNSTABILIZED -> unstabilized eeg
- * STABILIZED -> stabilized eeg
- */
-viewModel.eegStabilityValue.observe(this@MainActivity) { value ->
-    when (value) {
-        Result.EEGStability.UNSTABILIZED -> {}
-        Result.EEGStability.STABILIZED   -> {}
-    }
-}
-```
-
-<br/>
-
-### Setting Library Reference
-
-#### Gradle File (App Level)
-
-```groovy
-dependencies {
-    implementation 'omnifit.sdk:omnifit-brain-ktx:0.0.4'
-}
-```
-
-<br/>
-
-#### settings.gradle File
-
-```groovy
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        maven { url 'http://maven.omnicns.co.kr/nexus/content/repositories/releases/'; allowInsecureProtocol true }
-    }
-}
-```
+* electrodeStatus: Electrode connection status
+* batteryLevel: Battery level status
+* eegStabilityValue: EEG stability status
 
 <br/>
 
