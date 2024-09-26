@@ -115,92 +115,13 @@ leftRelaxationIndicatorValue, rightRelaxationIndicatorValue, unbalanceIndicatorV
 <br/>
 
 #### startMeasuring 함수 매개 변수
-
-> measuringTime : 측정 진행 시간. 디폴트 파라미터로 60초가 선언되어있음.<br/>
 > eyeState : 측정하려는 눈의 상태. Opened 와 Closed 두 개의 타입이 존재. 디폴트 파라미터로 CLOSED가 선언되어있음.<br/>
-> onError : 에러가 발생했을 때 호출되는 콜백. 인자로 Throwable이 들어옴.
 
-#### 사용 예시
-
-```kotlin
-// 장치 측정 시작
-viewModel.startMeasuring(measuringTime = 60, eyesState = Result.EyesState.CLOSED, onError = { throwable ->
-    runOnUiThread {
-      Toast.makeText(applicationContext, throwable.message.toString(), Toast.LENGTH_SHORT).show()
-    }
-})
-
-// 장치 측정 종료
-viewModel.stopMeasuring()
-
-// 측정 상태
-viewModel.isMeasuring.observe(this@SampleActivity) { value ->
-  if (value) {
-    // true -> 측정 중
-  } else {
-    // false -> 대기 중
-  }
-}
-
-// 뇌파 데이터
-viewModel.result.observe(this@SampleActivity) { value ->
-    println("Result : $value")
-}
-```
-
-<br/>
-
-### 두뇌 점수 획득
-
-ViewModel의 **getBrainScore 함수**를 호출하면 두뇌 점수를 획득할 수 있습니다.
-인자로 ArrayList<Result>를 넘기면 되고, 리턴값은 Int 타입의 두뇌 점수입니다.
-<br/>
-단, getBrainScore는 인자로 넘긴 리스트가 비어있거나, 측정하는 동안 장치를 잘못 착용하여 뇌파 데이터 전체가 사용할 수 없는 경우 IllegalArgumentException을 던집니다.
-오류의 내용은 에러 객체의 message 프로퍼티를 통해서 확인할 수 있습니다.
-
-#### getBrainScore 함수 매개 변수
-
-> results : ArrayList<Result> 타입의 매개 변수. 측정이 진행된 시간동안 Result 데이터 클래스를 ArrayList로 모은 후 인자로 넘기면 됨.
-
-#### 사용 예시
-```kotlin
-// resultList(ArrayList<Result>에 값이 있다고 가정)
-try {
-    val score = viewModel.getBrainScore(resultList)
-    println("[SCORE] : $score")
-} catch (e: IllegalArgumentException) {
-    println("[IllegalArgumentException] - error : ${e.message}")
-}
-```
 
 <br/>
 
 ### 장치 정보 획득
-
-장치와의 연결이 성립되면 **장치 시리얼 번호, 측정 상태 변환 시간, 신호 안정화 기준값**을 획득할 수 있습니다.<br/>
-다음과 같은 함수를 호출하면 콜백 함수로 결과가 전달됩니다.
-
-* 장치 시리얼 번호 : 장치에 부여된 고유번호(Serial number)
-* 측정 상태 변환 시간 : 장치에 적용된 측정 상태 변환 시간 값
-* 신호 안정화 기준값 : 장치에 기록된 뇌파 안정화 기준 값
-
-#### 사용 예시
-```kotlin
-// 장치 시리얼 번호
-viewModel.readSerialNo(block = { serialNumber ->
-    Toast.makeText(applicationContext, serialNumber, Toast.LENGTH_SHORT).show()
-})
-
-// 측정 상태 변환 시간
-viewModel.readMeasureStartChangeTime(block = { time ->
-    Toast.makeText(applicationContext, time, Toast.LENGTH_SHORT).show()
-})
-
-// 신호 안정화 기준값
-viewModel.readSignalStability(block = { signalStability ->
-    Toast.makeText(applicationContext, signalStability, Toast.LENGTH_SHORT).show()
-})
-```
+장치이벤트 구독(deviceEventPublisher)시 discoveredDevices 에서 장치정보를 획득할수 있다. 
 
 <br/>
 
@@ -211,90 +132,6 @@ viewModel.readSignalStability(block = { signalStability ->
 * electrodeStatus : 전극 연결 상태
 * batteryLevel : 배터리 잔량 상태
 * eegStabilityValue : 뇌파 안정 상태
-
-#### 전극 센서 부착 상태
-
-```kotlin
-/**
- * ALL_DETACHED -> all detached
- * LEFT_ELECTRODE_DETACHED -> left eeg sensor detached
- * RIGHT_ELECTRODE_DETACHED -> right eeg sensor detached
- * LEFT_EARPHONE_DETACHED -> left earphone detached
- * RIGHT_EARPHONE_DETACHED -> right earphone detached
- * ALL_ATTACHED -> all attached
- */
-viewModel.electrodeStatus.observe(this@SampleActivity) { state ->
-    when (state) {
-        Result.Electrode.ALL_DETACHED              -> {}
-        Result.Electrode.LEFT_ELECTRODE_DETACHED   -> {}
-        Result.Electrode.RIGHT_ELECTRODE_DETACHED  -> {}
-        Result.Electrode.LEFT_EARPHONE_DETACHED    -> {}
-        Result.Electrode.RIGHT_EARPHONE_DETACHED   -> {}
-        Result.Electrode.ALL_ATTACHED              -> {}
-    }
-}
-```
-
-<br/>
-
-#### 배터리 잔량 상태
-
-```kotlin
-/**
- * INSUFFICIENT -> device battery is low
- * SUFFICIENT -> device battery is sufficient
- */
-viewModel.batteryLevel.observe(this@SampleActivity) { level ->
-    when (level) {
-        Result.BatteryLevel.INSUFFICIENT -> {}
-        Result.BatteryLevel.SUFFICIENT   -> {}
-    }
-}
-```
-
-<br/>
-
-#### 뇌파 안정 상태
-
-```kotlin
-/**
- * UNSTABILIZED -> unstabilized eeg
- * STABILIZED -> stabilized eeg
- */
-viewModel.eegStabilityValue.observe(this@MainActivity) { value ->
-    when (value) {
-        Result.EEGStability.UNSTABILIZED -> {}
-        Result.EEGStability.STABILIZED   -> {}
-    }
-}
-```
-
-<br/>
-
-### 라이브러리 참조 설정
-
-#### Gradle 파일(앱 레벨)
-
-```groovy
-dependencies {
-    implementation 'omnifit.sdk:omnifit-brain-ktx:0.0.4'
-}
-```
-
-<br/>
-
-#### settings.gradle 파일
-
-```groovy
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-        maven { url 'http://maven.omnicns.co.kr/nexus/content/repositories/releases/'; allowInsecureProtocol true }
-    }
-}
-```
 
 <br/>
 
@@ -313,3 +150,5 @@ dependencyResolutionManagement {
     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
     See the License for the specific language governing permissions and
     limitations under the License.
+
+<br/>
