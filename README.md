@@ -30,18 +30,18 @@ seconds : 인자 값 만큼 시간 초과 후 스캔 정지
 취소 : stopScanning()
 
 ### 브레인 장치 연결 / 해제
-연결 : 
-    func connect(to device: CBPeripheral) {
-        subscribeToMeasurementPublishers() // 측정 이벤트 구독 시작
-        brain?.connect(device)
-    }
-재연결 : uuid: peripheral.identifier
-      reconnectBrainDevice(with: uuid)
-해제 : 
-    private func unsubscribeToMeasurementPublishers() {
-        measurementEventSubscription?.cancel()
-        measurementEventSubscription = nil
-    }
+연결 : <br/>
+    func connect(to device: CBPeripheral) {<br/>
+        subscribeToMeasurementPublishers() // 측정 이벤트 구독 시작<br/>
+        brain?.connect(device)<br/>
+    }<br/>
+재연결 : uuid: peripheral.identifier<br/>
+      reconnectBrainDevice(with: uuid)<br/>
+해제 : <br/>
+    private func unsubscribeToMeasurementPublishers() {<br/>
+        measurementEventSubscription?.cancel()<br/>
+        measurementEventSubscription = nil<br/>
+    }<br/>
 
 ### 측정 시작 / 종료
 
