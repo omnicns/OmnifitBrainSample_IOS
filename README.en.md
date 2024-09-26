@@ -29,18 +29,18 @@ Scan : startScanning(for seconds: TimeInterval)
 Cancel : stopScanning()
 
 ### Brain Device Connect / Unconnect
-Connect :
-            func connect(to device: CBPeripheral) {
-                subscribeToMeasurementPublishers() // Start measurement event subscription
-                brain?.connect(device)
-            }
-Reconnect : uuid: peripheral.identifier
-            reconnectBrainDevice(with: uuid)
-Unsubscribe :
-            private func unsubscribeToMeasurementPublishers() {
-                measurementEventSubscription?.cancel()
-                measurementEventSubscription = nil
-            }
+Connect :<br/>
+            func connect(to device: CBPeripheral) {<br/>
+                subscribeToMeasurementPublishers() // Start measurement event subscription<br/>
+                brain?.connect(device)<br/>
+            }<br/>
+Reconnect : uuid: peripheral.identifier<br/>
+            reconnectBrainDevice(with: uuid)<br/>
+Unsubscribe :<br/>
+            private func unsubscribeToMeasurementPublishers() {<br/>
+                measurementEventSubscription?.cancel()<br/>
+                measurementEventSubscription = nil<br/>
+            }<br/>
 
 <br/>
 
