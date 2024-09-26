@@ -25,8 +25,8 @@
 LiveData 라이브러리를 사용하여 제공하고 있습니다.**
 
 ### 브레인 장치 검색 / 취소
-seconds : 인자 값 만큼 시간 초과 후 스캔 정지
-검색 : startScanning(for seconds: TimeInterval)
+seconds : 인자 값 만큼 시간 초과 후 스캔 정지<br/>
+검색 : startScanning(for seconds: TimeInterval)<br/>
 취소 : stopScanning()
 
 ### 브레인 장치 연결 / 해제
