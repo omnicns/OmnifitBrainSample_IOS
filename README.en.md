@@ -7,7 +7,8 @@
 3. Add Bluetooth permission to Info.plist<br/>
 * Privacy - Bluetooth Always Usage Description<br/>
 * Privacy - Bluetooth Peripheral Usage Description<br/>
-4. BrainManager can be customized to suit your needs.
+4. BrainManager can be customized to suit your needs.<br/>
+   import BrainLib 해준다.
 
 ## Summary
 
