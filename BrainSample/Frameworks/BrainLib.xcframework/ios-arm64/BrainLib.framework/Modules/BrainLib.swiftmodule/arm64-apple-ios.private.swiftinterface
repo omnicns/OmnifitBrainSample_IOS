@@ -1,0 +1,187 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BrainLib
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+@_exported import BrainLib
+import Combine
+import CoreBluetooth
+import Swift
+import SwiftUI
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct DeviceMonitorData {
+  public var eegStabilityValue: Swift.Int
+  public var electrodeStatus: BrainLib.ElectrodeAttachmentStatus
+  public var batteryLevel: Swift.Int
+  public var eegSignalDcLevel_l: Swift.Int
+  public var eegSignalDcLevel_r: Swift.Int
+  public var firmwareVersion: Swift.Int
+  public init(eegStabilityValue: Swift.Int = 0, electrodeStatus: BrainLib.ElectrodeAttachmentStatus = ElectrodeAttachmentStatus.UNKNOWN, batteryLevel: Swift.Int = 0, eegSignalDcLevel_l: Swift.Int = 0, eegSignalDcLevel_r: Swift.Int = 0, firmwareVersion: Swift.Int = 0)
+}
+public struct LiveData {
+  public var leftThetaIndicatorValue: Swift.Int
+  public var rightThetaIndicatorValue: Swift.Int
+  public var leftAlphaIndicatorValue: Swift.Int
+  public var rightAlphaIndicatorValue: Swift.Int
+  public var leftLowBetaIndicatorValue: Swift.Int
+  public var rightLowBetaIndicatorValue: Swift.Int
+  public var leftMiddleBetaIndicatorValue: Swift.Int
+  public var rightMiddleBetaIndicatorValue: Swift.Int
+  public var leftHighBetaIndicatorValue: Swift.Int
+  public var rightHighBetaIndicatorValue: Swift.Int
+  public var leftGammaIndicatorValue: Swift.Int
+  public var rightGammaIndicatorValue: Swift.Int
+  public var concentrationIndicatorValue: Swift.Int
+  public var leftRelaxationIndicatorValue: Swift.Int
+  public var rightRelaxationIndicatorValue: Swift.Int
+  public var unbalanceIndicatorValue: Swift.Int
+  public var leftPowerSpectrum: [Swift.Double]
+  public var rightPowerSpectrum: [Swift.Double]
+  public var leftThetaPowerSpectrum: Swift.Double
+  public var rightThetaPowerSpectrum: Swift.Double
+  public var leftAlphaPowerSpectrum: Swift.Double
+  public var rightAlphaPowerSpectrum: Swift.Double
+  public var leftLowBetaPowerSpectrum: Swift.Double
+  public var rightLowBetaPowerSpectrum: Swift.Double
+  public var leftMidBetaPowerSpectrum: Swift.Double
+  public var rightMidBetaPowerSpectrum: Swift.Double
+  public var leftHighBetaPowerSpectrum: Swift.Double
+  public var rightHighBetaPowerSpectrum: Swift.Double
+  public var leftGammaPowerSpectrum: Swift.Double
+  public var rightGammaPowerSpectrum: Swift.Double
+  public var leftTotalPowerSpectrum: Swift.Double
+  public var rightTotalPowerSpectrum: Swift.Double
+  public var leftThetaRatio: Swift.Int
+  public var leftAlphaRatio: Swift.Int
+  public var leftLowBetaRatio: Swift.Int
+  public var leftMidBetaRatio: Swift.Int
+  public var leftHighBetaRatio: Swift.Int
+  public var leftGammaRatio: Swift.Int
+  public var rightThetaRatio: Swift.Int
+  public var rightAlphaRatio: Swift.Int
+  public var rightLowBetaRatio: Swift.Int
+  public var rightMidBetaRatio: Swift.Int
+  public var rightHighBetaRatio: Swift.Int
+  public var rightGammaRatio: Swift.Int
+  public var leftSEF90: Swift.Double
+  public var rightSEF90: Swift.Double
+}
+@objc @_inheritsConvenienceInitializers final public class OmnifitBrain : ObjectiveC.NSObject {
+  final public let bluetoothStatePublisher: Combine.PassthroughSubject<Swift.Int, Swift.Never>
+  final public let deviceEventPublisher: Combine.PassthroughSubject<BrainLib.BrainDeviceEvent, Swift.Never>
+  final public let measurementStatePublisher: Combine.PassthroughSubject<BrainLib.MeasurementState, Swift.Never>
+  final public var measurementEventPublisher: Combine.AnyPublisher<BrainLib.BrainMeasurementEvent, Swift.Never> {
+    get
+  }
+  @objc override dynamic public init()
+  final public func reqBluetoothPermission()
+  @objc deinit
+}
+extension BrainLib.OmnifitBrain {
+  final public func startScanning(for seconds: Foundation.TimeInterval)
+  final public func stopScanning()
+  final public func connect(_ device: CoreBluetooth.CBPeripheral)
+  final public func reconnectBrainDevice(with uuid: Foundation.UUID)
+  final public func reconnectToPreviousDevice()
+  final public func disconnect(_ currentDevice: CoreBluetooth.CBPeripheral)
+  final public func isScanning() -> Swift.Bool
+  final public func startMeasuring()
+  final public func stopMeasuring()
+  final public func completeMeasuring()
+  final public func isMeasuring() -> Swift.Bool
+  final public func checkConnectionStatus()
+}
+extension BrainLib.OmnifitBrain : CoreBluetooth.CBCentralManagerDelegate {
+  @objc final public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+  @objc final public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDiscover peripheral: CoreBluetooth.CBPeripheral, advertisementData: [Swift.String : Any], rssi RSSI: Foundation.NSNumber)
+  @objc final public func centralManager(_ central: CoreBluetooth.CBCentralManager, didConnect peripheral: CoreBluetooth.CBPeripheral)
+  @objc final public func centralManager(_ central: CoreBluetooth.CBCentralManager, didFailToConnect peripheral: CoreBluetooth.CBPeripheral, error: (any Swift.Error)?)
+  @objc final public func centralManager(_ central: CoreBluetooth.CBCentralManager, didDisconnectPeripheral peripheral: CoreBluetooth.CBPeripheral, error: (any Swift.Error)?)
+}
+extension BrainLib.OmnifitBrain {
+  final public func setEyesState(_ newState: BrainLib.EyesStatus)
+  final public func getEyesState() -> BrainLib.EyesStatus
+  final public func startConnectionCheckTimer()
+}
+public enum BrainDeviceEvent {
+  case scanState(BrainLib.ScanState)
+  case deviceConnectionState(BrainLib.ConnectionState)
+  case discoveredDevices([BrainLib.DiscoveredDevice])
+  case connectedDevice(CoreBluetooth.CBPeripheral?)
+}
+public enum BrainMeasurementEvent {
+  case measurementData(BrainLib.LiveData)
+  case deviceMonitorData(BrainLib.DeviceMonitorData)
+  case measurementDuration(Swift.Int)
+  case measurable(Swift.Bool)
+}
+public enum ScanState : Swift.Equatable {
+  case scanningInProgress, scanStopped
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: BrainLib.ScanState, b: BrainLib.ScanState) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ConnectionState : Swift.Equatable {
+  case connectingInProgress, deviceConnected
+  case disconnectingInProgress, deviceDisconnected
+  case connectionFailed
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: BrainLib.ConnectionState, b: BrainLib.ConnectionState) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum MeasurementState : Swift.Equatable {
+  case inProgress, stopped, completed
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: BrainLib.MeasurementState, b: BrainLib.MeasurementState) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum EyesStatus : Swift.Equatable {
+  case closed, open
+  public func hash(into hasher: inout Swift.Hasher)
+  public static func == (a: BrainLib.EyesStatus, b: BrainLib.EyesStatus) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum ElectrodeAttachmentStatus : Swift.Int {
+  case UNKNOWN
+  case DETACHED
+  case CHANNEL_L_DETACHED
+  case CHANNEL_R_DETACHED
+  case GROUND_DETACHED
+  case REFERENCE_DETACHED
+  case ATTACHED
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension CoreBluetooth.CBPeripheral : Swift.Identifiable {
+  public var id: Foundation.UUID {
+    get
+  }
+  public typealias ID = Foundation.UUID
+}
+public struct DiscoveredDevice : Swift.Identifiable {
+  public let id: Foundation.UUID
+  public var peripheral: CoreBluetooth.CBPeripheral
+  public var name: Swift.String?
+  public var rssi: Foundation.NSNumber
+  public init(peripheral: CoreBluetooth.CBPeripheral, name: Swift.String?, rssi: Foundation.NSNumber)
+  public typealias ID = Foundation.UUID
+}
+extension BrainLib.ScanState : Swift.Hashable {}
+extension BrainLib.ConnectionState : Swift.Hashable {}
+extension BrainLib.MeasurementState : Swift.Hashable {}
+extension BrainLib.EyesStatus : Swift.Hashable {}
+extension BrainLib.ElectrodeAttachmentStatus : Swift.Equatable {}
+extension BrainLib.ElectrodeAttachmentStatus : Swift.Hashable {}
+extension BrainLib.ElectrodeAttachmentStatus : Swift.RawRepresentable {}

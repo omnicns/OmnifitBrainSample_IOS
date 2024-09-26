@@ -1,0 +1,11 @@
+framework module BrainLib {
+  umbrella header "BrainLib.h"
+  export *
+
+  module * { export * }
+}
+
+module BrainLib.Swift {
+  header "BrainLib-Swift.h"
+  requires objc
+}
