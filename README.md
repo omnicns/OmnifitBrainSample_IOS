@@ -17,13 +17,31 @@
 
 * 브레인 장치 검색 / 취소
 * 브레인 장치 연결 / 해제
-* 브레인 장치 검색 및 연결 / 취소 및 해제
 * 측정 시작 / 종료 (뇌파 데이터 획득)
 * 장치 정보 획득
 * 장치 상태 모니터링 (연결 상태, 전극 센서 부착 상태, 배터리 잔량)
 
 **검색 중인지를 나타내는 상태, 연결 중인지를 나타내는 상태, 측정 중인지를 나타내는 상태, 뇌파 데이터, 장치 상태 모두 
 LiveData 라이브러리를 사용하여 제공하고 있습니다.**
+
+### 브레인 장치 검색 / 취소
+seconds : 인자 값 만큼 시간 초과 후 스캔 정지
+검색 : startScanning(for seconds: TimeInterval)
+취소 : stopScanning()
+
+### 브레인 장치 연결 / 해제
+연결 : 
+    func connect(to device: CBPeripheral) {
+        subscribeToMeasurementPublishers() // 측정 이벤트 구독 시작
+        brain?.connect(device)
+    }
+재연결 : uuid: peripheral.identifier
+      reconnectBrainDevice(with: uuid)
+해제 : 
+    private func unsubscribeToMeasurementPublishers() {
+        measurementEventSubscription?.cancel()
+        measurementEventSubscription = nil
+    }
 
 ### 측정 시작 / 종료
 
