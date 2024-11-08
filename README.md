@@ -156,8 +156,8 @@ leftRelaxationIndicatorValue, rightRelaxationIndicatorValue, unbalanceIndicatorV
 
 ### 두뇌 점수 획득
 
-getBrainScore 함수를 호출하면 두뇌 점수를 획득할 수 있습니다.
-인자로 [LiveData] 수집하고 있는 를 measurementResult 넘기면 되고, 리턴값은 Int 타입의 두뇌 점수입니다.
+getBrainScore 함수를 호출하면 두뇌 점수를 획득할 수 있습니다.<br/>
+인자로 [LiveData] 수집하고 있는 measurementResult 넘기면 되고, 리턴값은 Int 타입의 두뇌 점수입니다.
 
 <br/>
 
