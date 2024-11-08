@@ -150,6 +150,13 @@ You can use the following LiveData to determine the current device status.
 
 <br/>
 
+### Get Brain Score
+
+You can get your brain score by calling the getBrainScore function.
+You can pass the measurementResult that you are collecting [LiveData] as an argument, and the return value is the brain score of type Int.
+
+<br/>
+
 ## License
 
     Copyright 2022 omniC&S
