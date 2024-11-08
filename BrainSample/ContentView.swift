@@ -123,7 +123,10 @@ extension ContentView {
                         /**
                          측정중 수집된 Data 확인
                          */
-                        print("측정Data: \(brainManager.measurementResult)")
+//                        print("측정Data: \(brainManager.measurementResult)")
+                        print("두뇌 점수: \(brainManager.getBrainScore())")
+                        
+                        
                     }) {
                         Text("측정완료")
                     }

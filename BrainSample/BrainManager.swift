@@ -247,6 +247,11 @@ extension BrainManager {
         measureEyesState = brain?.getEyesState() ?? .closed
     }
     
+    func getBrainScore() -> Int {
+        let brainScore = brain?.getBrainScore(results: measurementResult) ?? 0
+        return brainScore
+    }
+    
     // 배터리표현
     private func intToPercentString(value: Int) -> String {
         guard value >= 0 else { return " - %" }

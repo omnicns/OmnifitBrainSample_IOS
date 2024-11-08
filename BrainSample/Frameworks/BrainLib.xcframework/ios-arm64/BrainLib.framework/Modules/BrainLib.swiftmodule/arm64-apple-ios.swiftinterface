@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name BrainLib
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 6.0 effective-5.10 (swiftlang-6.0.0.9.10 clang-1600.0.26.2)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name BrainLib
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 @_exported import BrainLib
 import Combine
 import CoreBluetooth
@@ -103,6 +103,7 @@ extension BrainLib.OmnifitBrain {
   final public func setEyesState(_ newState: BrainLib.EyesStatus)
   final public func getEyesState() -> BrainLib.EyesStatus
   final public func startConnectionCheckTimer()
+  final public func getBrainScore(results: [BrainLib.LiveData]) -> Swift.Int
 }
 public enum BrainDeviceEvent {
   case scanState(BrainLib.ScanState)
@@ -168,6 +169,7 @@ extension CoreBluetooth.CBPeripheral : Swift.Identifiable {
   public var id: Foundation.UUID {
     get
   }
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Foundation.UUID
 }
 public struct DiscoveredDevice : Swift.Identifiable {
@@ -176,6 +178,7 @@ public struct DiscoveredDevice : Swift.Identifiable {
   public var name: Swift.String?
   public var rssi: Foundation.NSNumber
   public init(peripheral: CoreBluetooth.CBPeripheral, name: Swift.String?, rssi: Foundation.NSNumber)
+  @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   public typealias ID = Foundation.UUID
 }
 extension BrainLib.ScanState : Swift.Hashable {}

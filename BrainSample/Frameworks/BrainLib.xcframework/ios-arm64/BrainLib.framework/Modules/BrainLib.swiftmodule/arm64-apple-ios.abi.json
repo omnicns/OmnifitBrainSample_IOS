@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "BrainLib",
+    "printedName": "BrainLib",
     "children": [
       {
         "kind": "Import",
@@ -613,6 +613,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -4632,6 +4648,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -5481,12 +5513,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -5531,12 +5563,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "Swift.Error?",
+                "printedName": "(any Swift.Error)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "Error",
-                    "printedName": "Swift.Error",
+                    "printedName": "any Swift.Error",
                     "usr": "s:s5ErrorP"
                   }
                 ],
@@ -5631,6 +5663,43 @@
             ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getBrainScore",
+            "printedName": "getBrainScore(results:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[BrainLib.LiveData]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LiveData",
+                    "printedName": "BrainLib.LiveData",
+                    "usr": "s:8BrainLib8LiveDataV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8BrainLib07OmnifitA0C03getA5Score7resultsSiSayAA8LiveDataVG_tF",
+            "mangledName": "$s8BrainLib07OmnifitA0C03getA5Score7resultsSiSayAA8LiveDataVG_tF",
+            "moduleName": "BrainLib",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -5648,6 +5717,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5928,6 +6011,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -6143,6 +6242,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -6330,6 +6445,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Hashable",
@@ -6644,6 +6773,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -6882,6 +7025,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Hashable",
             "printedName": "Hashable",
             "usr": "s:SH",
@@ -7081,6 +7238,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Hashable",
@@ -7444,6 +7615,20 @@
         ],
         "enumRawTypeName": "Int",
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -7870,6 +8055,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -7971,6 +8170,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -8049,3124 +8262,1696 @@
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 792,
+      "offset": 780,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 911,
+      "offset": 899,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 948,
+      "offset": 936,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 985,
+      "offset": 973,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 1019,
+      "offset": 1007,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5301,
+      "offset": 5289,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5344,
+      "offset": 5332,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5386,
+      "offset": 5374,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5429,
+      "offset": 5417,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5473,
+      "offset": 5461,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5518,
+      "offset": 5506,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5565,
+      "offset": 5553,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5613,
+      "offset": 5601,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5659,
+      "offset": 5647,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5705,
+      "offset": 5693,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5747,
+      "offset": 5735,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5790,
+      "offset": 5778,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5836,
+      "offset": 5824,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5883,
+      "offset": 5871,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5931,
+      "offset": 5919,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 5973,
+      "offset": 5961,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "Array",
-      "offset": 6014,
+      "offset": 6002,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "Array",
-      "offset": 6057,
+      "offset": 6045,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6102,
+      "offset": 6090,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6147,
+      "offset": 6135,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6191,
+      "offset": 6179,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6236,
+      "offset": 6224,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6282,
+      "offset": 6270,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6329,
+      "offset": 6317,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6375,
+      "offset": 6363,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6422,
+      "offset": 6410,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6469,
+      "offset": 6457,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6517,
+      "offset": 6505,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6561,
+      "offset": 6549,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6606,
+      "offset": 6594,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6650,
+      "offset": 6638,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6695,
+      "offset": 6683,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6728,
+      "offset": 6716,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6761,
+      "offset": 6749,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6796,
+      "offset": 6784,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6831,
+      "offset": 6819,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6867,
+      "offset": 6855,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6900,
+      "offset": 6888,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6934,
+      "offset": 6922,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 6968,
+      "offset": 6956,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7004,
+      "offset": 6992,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7040,
+      "offset": 7028,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7077,
+      "offset": 7065,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7112,
+      "offset": 7100,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7143,
+      "offset": 7131,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/BrainDataModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 7175,
+      "offset": 7163,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "StringLiteral",
-      "offset": 270,
+      "offset": 226,
       "length": 5,
       "value": "\"OCW\""
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "StringLiteral",
-      "offset": 320,
+      "offset": 276,
       "length": 38,
       "value": "\"581f3b86-6e63-48cc-a618-288167d2c4a2\""
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "Array",
-      "offset": 461,
+      "offset": 417,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "StringLiteral",
-      "offset": 614,
+      "offset": 570,
       "length": 38,
       "value": "\"581f3b86-6e63-48cc-a618-288167d2c4a3\""
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "StringLiteral",
-      "offset": 737,
+      "offset": 693,
       "length": 38,
       "value": "\"581f3b86-6e63-48cc-a618-288167d2c4a4\""
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "StringLiteral",
-      "offset": 867,
+      "offset": 823,
       "length": 38,
       "value": "\"581f3b86-6e63-48cc-a618-288167d2c4a5\""
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "FloatLiteral",
-      "offset": 1006,
+      "offset": 962,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "FloatLiteral",
-      "offset": 1075,
+      "offset": 1031,
       "length": 5,
       "value": "0.488"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 1144,
+      "offset": 1100,
       "length": 3,
       "value": "128"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "FloatLiteral",
-      "offset": 1150,
+      "offset": 1106,
       "length": 5,
       "value": "0.488"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 1712,
-      "length": 2,
-      "value": "20"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4893,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5034,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5177,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5321,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5462,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5653,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5795,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5939,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6084,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6226,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6397,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6575,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6754,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6924,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7064,
-      "length": 3,
-      "value": "128"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7106,
-      "length": 3,
-      "value": "128"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7141,
-      "length": 2,
-      "value": "32"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9182,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10602,
+      "offset": 20508,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 10618,
+      "offset": 24382,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 10738,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10745,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10756,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10852,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10859,
-      "length": 2,
-      "value": "15"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10870,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10964,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10972,
-      "length": 2,
-      "value": "23"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10983,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11079,
-      "length": 2,
-      "value": "16"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11087,
-      "length": 2,
-      "value": "23"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11098,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11194,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11202,
-      "length": 2,
-      "value": "29"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11213,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11311,
-      "length": 2,
-      "value": "24"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11319,
-      "length": 2,
-      "value": "29"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11330,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11426,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11434,
-      "length": 2,
-      "value": "39"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11445,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11543,
-      "length": 2,
-      "value": "30"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11551,
-      "length": 2,
-      "value": "39"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11562,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11659,
-      "length": 2,
-      "value": "40"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11667,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11678,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11777,
-      "length": 2,
-      "value": "40"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11785,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11796,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11890,
-      "length": 2,
-      "value": "61"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11898,
-      "length": 2,
-      "value": "81"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11909,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12005,
-      "length": 2,
-      "value": "61"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12013,
-      "length": 2,
-      "value": "81"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12024,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12718,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12722,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12826,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12830,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12933,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12937,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13041,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13045,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13152,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13156,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13266,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13270,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13379,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13383,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13493,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13497,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13608,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13612,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13725,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13729,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13835,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13839,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13943,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 13947,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14050,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14054,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14158,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 14162,
-      "length": 2,
-      "value": "-2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16013,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16046,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16136,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16764,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 17536,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 20523,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21188,
-      "length": 3,
-      "value": "256"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21416,
-      "length": 3,
-      "value": "256"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21644,
-      "length": 3,
-      "value": "256"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 21872,
-      "length": 3,
-      "value": "256"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 22100,
-      "length": 3,
-      "value": "256"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 22328,
-      "length": 3,
-      "value": "256"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 22556,
-      "length": 3,
-      "value": "256"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 22784,
-      "length": 3,
-      "value": "256"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23424,
-      "length": 3,
-      "value": "128"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23457,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23494,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23498,
-      "length": 2,
-      "value": "82"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23509,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "FloatLiteral",
-      "offset": 23552,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23586,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23618,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23628,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23632,
-      "length": 2,
-      "value": "82"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23763,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "FloatLiteral",
-      "offset": 23808,
-      "length": 4,
-      "value": "90.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 23986,
+      "offset": 24439,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 24224,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24397,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24454,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 24511,
+      "offset": 24496,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 24568,
+      "offset": 24553,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 24625,
+      "offset": 24610,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 24682,
+      "offset": 24667,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 24739,
+      "offset": 24724,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 24796,
+      "offset": 24781,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 24853,
+      "offset": 24838,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 24910,
+      "offset": 24895,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 24967,
+      "offset": 24952,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25025,
+      "offset": 25010,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25083,
+      "offset": 25068,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25141,
+      "offset": 25126,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25199,
+      "offset": 25184,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25257,
+      "offset": 25242,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25315,
+      "offset": 25300,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25373,
+      "offset": 25358,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25431,
+      "offset": 25416,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25489,
+      "offset": 25474,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25556,
+      "offset": 25541,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25613,
+      "offset": 25598,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25810,
+      "offset": 25795,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25880,
+      "offset": 25865,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 25950,
+      "offset": 25935,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26020,
+      "offset": 26005,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26090,
+      "offset": 26075,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26160,
+      "offset": 26145,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26230,
+      "offset": 26215,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26300,
+      "offset": 26285,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26371,
+      "offset": 26356,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26442,
+      "offset": 26427,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26513,
+      "offset": 26498,
       "length": 2,
       "value": "13"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26584,
+      "offset": 26569,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26642,
+      "offset": 26627,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26700,
+      "offset": 26685,
       "length": 2,
       "value": "16"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26758,
+      "offset": 26743,
       "length": 2,
       "value": "17"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26816,
+      "offset": 26801,
       "length": 2,
       "value": "18"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26874,
+      "offset": 26859,
       "length": 2,
       "value": "19"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26932,
+      "offset": 26917,
       "length": 2,
       "value": "20"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 26990,
+      "offset": 26975,
       "length": 2,
       "value": "21"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27048,
+      "offset": 27033,
       "length": 2,
       "value": "24"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27234,
+      "offset": 27219,
       "length": 2,
       "value": "31"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27304,
+      "offset": 27289,
       "length": 4,
       "value": "0x00"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27330,
+      "offset": 27315,
       "length": 4,
       "value": "0x08"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27356,
+      "offset": 27341,
       "length": 4,
       "value": "0x10"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27384,
+      "offset": 27369,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27304,
-      "length": 4,
-      "value": "0x00"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27330,
-      "length": 4,
-      "value": "0x08"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27356,
-      "length": 4,
-      "value": "0x10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27384,
-      "length": 1,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27304,
-      "length": 4,
-      "value": "0x00"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27330,
-      "length": 4,
-      "value": "0x08"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27356,
-      "length": 4,
-      "value": "0x10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27384,
-      "length": 1,
-      "value": "-1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27480,
+      "offset": 27465,
       "length": 15,
       "value": "1"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27509,
+      "offset": 27494,
       "length": 11,
       "value": "2"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27534,
+      "offset": 27519,
       "length": 16,
       "value": "3"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27564,
+      "offset": 27549,
       "length": 22,
       "value": "4"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27600,
+      "offset": 27585,
       "length": 22,
       "value": "5"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27636,
+      "offset": 27621,
       "length": 22,
       "value": "6"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27672,
+      "offset": 27657,
       "length": 22,
       "value": "7"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27708,
+      "offset": 27693,
       "length": 22,
       "value": "8"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27744,
+      "offset": 27729,
       "length": 22,
       "value": "9"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27780,
+      "offset": 27765,
       "length": 22,
       "value": "10"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27816,
+      "offset": 27801,
       "length": 22,
       "value": "11"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27480,
-      "length": 15,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27509,
-      "length": 11,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27534,
-      "length": 16,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27564,
-      "length": 22,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27600,
-      "length": 22,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27636,
-      "length": 22,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27672,
-      "length": 22,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27708,
-      "length": 22,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27744,
-      "length": 22,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27780,
-      "length": 22,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27816,
-      "length": 22,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27480,
-      "length": 15,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27509,
-      "length": 11,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27534,
-      "length": 16,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27564,
-      "length": 22,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27600,
-      "length": 22,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27636,
-      "length": 22,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27672,
-      "length": 22,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27708,
-      "length": 22,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27744,
-      "length": 22,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27780,
-      "length": 22,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27816,
-      "length": 22,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27934,
+      "offset": 27919,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27959,
+      "offset": 27944,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27984,
+      "offset": 27969,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 28009,
+      "offset": 27994,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 28034,
+      "offset": 28019,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 28059,
+      "offset": 28044,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 28084,
+      "offset": 28069,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 28109,
+      "offset": 28094,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27934,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27959,
+      "offset": 28180,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27984,
+      "offset": 28205,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 28009,
+      "offset": 28230,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 28034,
+      "offset": 28255,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 28059,
+      "offset": 28280,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 28084,
+      "offset": 28305,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 28109,
+      "offset": 28330,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
       "kind": "IntegerLiteral",
-      "offset": 27934,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27959,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 27984,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28009,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28034,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28059,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28084,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28109,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28195,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28220,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28245,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28270,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28295,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28320,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28345,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28370,
+      "offset": 28355,
       "length": 1,
       "value": "8"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28195,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28220,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28245,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28270,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28295,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28320,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28345,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28370,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28195,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28220,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28245,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28270,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28295,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28320,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28345,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28370,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28931,
-      "length": 3,
-      "value": "0xF"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28990,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 28995,
-      "length": 3,
-      "value": "0xF"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 29310,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 29320,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 29340,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 29393,
-      "length": 4,
-      "value": "0x01"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 29427,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 29457,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OCW-H20.swift",
-      "kind": "IntegerLiteral",
-      "offset": 29494,
-      "length": 1,
-      "value": "1"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
       "kind": "Array",
-      "offset": 1218,
+      "offset": 1206,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2184,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "Array",
-      "offset": 2776,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "StringLiteral",
-      "offset": 3736,
-      "length": 61,
-      "value": "\"No previously connected peripheral found with UUID: \""
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "StringLiteral",
-      "offset": 3796,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "FloatLiteral",
-      "offset": 6670,
-      "length": 3,
-      "value": "1.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
       "kind": "IntegerLiteral",
-      "offset": 7321,
-      "length": 1,
+      "offset": 16285,
+      "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
       "kind": "IntegerLiteral",
-      "offset": 7812,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8396,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9811,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9910,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10025,
-      "length": 1,
+      "offset": 16303,
+      "length": 18,
       "value": "2"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
       "kind": "IntegerLiteral",
-      "offset": 10128,
-      "length": 1,
+      "offset": 16331,
+      "length": 18,
       "value": "3"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
       "kind": "IntegerLiteral",
-      "offset": 10244,
-      "length": 1,
+      "offset": 16359,
+      "length": 15,
       "value": "4"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
       "kind": "IntegerLiteral",
-      "offset": 10344,
-      "length": 1,
+      "offset": 16384,
+      "length": 18,
       "value": "5"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16412,
+      "length": 8,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 577,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 596,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 615,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 634,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 653,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 672,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 691,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 726,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 743,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4930,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4938,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4972,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4980,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5395,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5753,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "BooleanLiteral",
-      "offset": 11218,
+      "offset": 5960,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "Array",
-      "offset": 12248,
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8765,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 8769,
       "length": 2,
-      "value": "[]"
+      "value": "61"
     },
     {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "FloatLiteral",
-      "offset": 14879,
-      "length": 4,
-      "value": "10.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "BooleanLiteral",
-      "offset": 14894,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "IntegerLiteral",
-      "offset": 16064,
-      "length": 8,
-      "value": "1"
+      "offset": 8780,
+      "length": 1,
+      "value": "0"
     },
     {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "IntegerLiteral",
-      "offset": 16082,
-      "length": 18,
-      "value": "2"
+      "offset": 9050,
+      "length": 1,
+      "value": "8"
     },
     {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "IntegerLiteral",
-      "offset": 16110,
-      "length": 18,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16138,
-      "length": 15,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16163,
-      "length": 18,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16191,
-      "length": 8,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16316,
+      "offset": 9054,
       "length": 2,
-      "value": "-1"
+      "value": "61"
     },
     {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "IntegerLiteral",
-      "offset": 16402,
+      "offset": 9065,
       "length": 1,
       "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "Array",
-      "offset": 16423,
-      "length": 7,
-      "value": "[0, 0, 0]"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16494,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "Array",
-      "offset": 16515,
-      "length": 7,
-      "value": "[1, 1, 0]"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16586,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "Array",
-      "offset": 16607,
-      "length": 7,
-      "value": "[1, 0, 1]"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16678,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "Array",
-      "offset": 16699,
-      "length": 7,
-      "value": "[1, 0, 0]"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16770,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "Array",
-      "offset": 16791,
-      "length": 7,
-      "value": "[0, 1, 1]"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16862,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "Array",
-      "offset": 16883,
-      "length": 7,
-      "value": "[1, 1, 1]"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16064,
-      "length": 8,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16082,
-      "length": 18,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16110,
-      "length": 18,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16138,
-      "length": 15,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16163,
-      "length": 18,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16191,
-      "length": 8,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16064,
-      "length": 8,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16082,
-      "length": 18,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16110,
-      "length": 18,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16138,
-      "length": 15,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16163,
-      "length": 18,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/OmnifitBrain.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16191,
-      "length": 8,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 577,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 596,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 615,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 634,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 653,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 672,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 691,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 577,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 596,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 615,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 634,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 653,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 672,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 691,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 577,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 596,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 615,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 634,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 653,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 672,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 691,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 726,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 743,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 726,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 743,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 726,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "IntegerLiteral",
-      "offset": 743,
-      "length": 1,
-      "value": "2"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 933,
-      "length": 4,
-      "value": "10.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 949,
-      "length": 4,
-      "value": "50.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 1048,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 1054,
+      "offset": 9295,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "StringLiteral",
-      "offset": 1980,
-      "length": 29,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "StringLiteral",
-      "offset": 1990,
+      "kind": "IntegerLiteral",
+      "offset": 9385,
       "length": 2,
-      "value": "\" is not supported.\""
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "StringLiteral",
-      "offset": 2248,
-      "length": 29,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "StringLiteral",
-      "offset": 2258,
-      "length": 2,
-      "value": "\" is not supported.\""
+      "value": "10"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 2369,
+      "offset": 9396,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2386,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2545,
-      "length": 7,
-      "value": "1.78838"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2556,
-      "length": 7,
-      "value": "0.50211"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2571,
-      "length": 7,
-      "value": "1.70273"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2582,
-      "length": 7,
-      "value": "0.49954"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2656,
-      "length": 7,
-      "value": "2.01180"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2667,
-      "length": 7,
-      "value": "0.52562"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2682,
-      "length": 7,
-      "value": "1.98363"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2693,
-      "length": 7,
-      "value": "0.54244"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2767,
-      "length": 7,
-      "value": "5.18157"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2778,
-      "length": 7,
-      "value": "0.85904"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2793,
-      "length": 7,
-      "value": "5.08934"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 2804,
-      "length": 7,
-      "value": "0.87985"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "StringLiteral",
-      "offset": 2860,
-      "length": 29,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "StringLiteral",
-      "offset": 2870,
+      "kind": "IntegerLiteral",
+      "offset": 9420,
       "length": 2,
-      "value": "\" is not supported.\""
+      "value": "20"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 3477,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 3484,
-      "length": 4,
-      "value": "50.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4060,
-      "length": 3,
-      "value": "2.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4067,
-      "length": 4,
-      "value": "50.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4263,
-      "length": 4,
-      "value": "21.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4276,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4292,
-      "length": 4,
-      "value": "30.0"
-    },
-    {
-      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4305,
+      "offset": 9431,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4321,
-      "length": 4,
-      "value": "38.0"
+      "kind": "IntegerLiteral",
+      "offset": 9455,
+      "length": 2,
+      "value": "30"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 4334,
+      "offset": 9466,
       "length": 3,
       "value": "2.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4350,
-      "length": 4,
-      "value": "44.0"
+      "kind": "IntegerLiteral",
+      "offset": 9490,
+      "length": 2,
+      "value": "40"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 4363,
+      "offset": 9501,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4379,
-      "length": 4,
-      "value": "50.0"
+      "kind": "IntegerLiteral",
+      "offset": 9525,
+      "length": 2,
+      "value": "46"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 4392,
+      "offset": 9536,
       "length": 3,
       "value": "4.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4408,
-      "length": 4,
-      "value": "56.0"
+      "kind": "IntegerLiteral",
+      "offset": 9560,
+      "length": 2,
+      "value": "54"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 4421,
+      "offset": 9571,
       "length": 3,
       "value": "5.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4437,
-      "length": 4,
-      "value": "62.0"
+      "kind": "IntegerLiteral",
+      "offset": 9595,
+      "length": 2,
+      "value": "60"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 4450,
+      "offset": 9606,
       "length": 3,
       "value": "6.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4466,
-      "length": 4,
-      "value": "69.0"
+      "kind": "IntegerLiteral",
+      "offset": 9630,
+      "length": 2,
+      "value": "70"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 4479,
+      "offset": 9641,
       "length": 3,
       "value": "7.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4495,
-      "length": 4,
-      "value": "76.0"
+      "kind": "IntegerLiteral",
+      "offset": 9665,
+      "length": 2,
+      "value": "80"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 4508,
+      "offset": 9676,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
-      "kind": "FloatLiteral",
-      "offset": 4524,
-      "length": 4,
-      "value": "86.0"
+      "kind": "IntegerLiteral",
+      "offset": 9700,
+      "length": 2,
+      "value": "90"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 4537,
+      "offset": 9711,
       "length": 3,
       "value": "9.0"
     },
     {
       "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
       "kind": "FloatLiteral",
-      "offset": 4561,
+      "offset": 9743,
       "length": 4,
       "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9861,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9877,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9924,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9940,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10046,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10062,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10166,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10234,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10303,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10368,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11648,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11700,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11834,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11851,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11874,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 12017,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12183,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 12314,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 12324,
+      "length": 4,
+      "value": "90.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12425,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12445,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12449,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12764,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12768,
+      "length": 2,
+      "value": "61"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12779,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12813,
+      "length": 1,
+      "value": "8"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12817,
+      "length": 2,
+      "value": "61"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12828,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 12877,
+      "length": 5,
+      "value": "100.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12981,
+      "length": 2,
+      "value": "10"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 12992,
+      "length": 3,
+      "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13020,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 13031,
+      "length": 3,
+      "value": "1.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13059,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 13070,
+      "length": 3,
+      "value": "2.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13098,
+      "length": 2,
+      "value": "40"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 13109,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13137,
+      "length": 2,
+      "value": "46"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 13148,
+      "length": 3,
+      "value": "4.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13176,
+      "length": 2,
+      "value": "54"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 13187,
+      "length": 3,
+      "value": "5.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13215,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 13226,
+      "length": 3,
+      "value": "6.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13254,
+      "length": 2,
+      "value": "70"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 13265,
+      "length": 3,
+      "value": "7.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13293,
+      "length": 2,
+      "value": "80"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 13304,
+      "length": 3,
+      "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13332,
+      "length": 2,
+      "value": "90"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 13343,
+      "length": 3,
+      "value": "9.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "FloatLiteral",
+      "offset": 13379,
+      "length": 4,
+      "value": "10.0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13424,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "Dictionary",
+      "offset": 14082,
+      "length": 947,
+      "value": "[(0.0, 0), (0.1, 1), (0.2, 2), (0.3, 3), (0.4, 4), (0.5, 5), (0.6, 6), (0.7, 7), (0.8, 8), (0.9, 9), (1.0, 10), (1.1, 11), (1.2, 12), (1.3, 13), (1.4, 14), (1.5, 15), (1.6, 16), (1.7, 17), (1.8, 18), (1.9, 19), (2.0, 20), (2.1, 21), (2.2, 22), (2.3, 23), (2.4, 24), (2.5, 25), (2.6, 26), (2.7, 27), (2.8, 28), (2.9, 29), (3.0, 30), (3.1, 31), (3.2, 32), (3.3, 33), (3.4, 34), (3.5, 35), (3.6, 36), (3.7, 37), (3.8, 38), (3.9, 39), (4.0, 40), (4.1, 41), (4.2, 42), (4.3, 43), (4.4, 44), (4.5, 45), (4.6, 46), (4.7, 47), (4.8, 48), (4.9, 49), (5.0, 50), (5.1, 51), (5.2, 52), (5.3, 53), (5.4, 54), (5.5, 55), (5.6, 56), (5.7, 57), (5.8, 58), (5.9, 59), (6.0, 60), (6.1, 61), (6.2, 62), (6.3, 63), (6.4, 64), (6.5, 65), (6.6, 66), (6.7, 67), (6.8, 68), (6.9, 69), (7.0, 70), (7.1, 71), (7.2, 72), (7.3, 73), (7.4, 74), (7.5, 75), (7.6, 76), (7.7, 77), (7.8, 78), (7.9, 79), (8.0, 80), (8.1, 81), (8.2, 82), (8.3, 83), (8.4, 84), (8.5, 85), (8.6, 86), (8.7, 87), (8.8, 88), (8.9, 89), (9.0, 90), (9.1, 91), (9.2, 92), (9.3, 93), (9.4, 94), (9.5, 95), (9.6, 96), (9.7, 97), (9.8, 98), (9.9, 99), (10.0, 100)]"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "Dictionary",
+      "offset": 15110,
+      "length": 943,
+      "value": "[(0.0, 11), (0.1, 12), (0.2, 13), (0.3, 14), (0.4, 15), (0.5, 16), (0.6, 17), (0.7, 18), (0.8, 19), (0.9, 20), (1.0, 21), (1.1, 22), (1.2, 23), (1.3, 24), (1.4, 25), (1.5, 26), (1.6, 27), (1.7, 28), (1.8, 29), (1.9, 30), (2.0, 51), (2.1, 52), (2.2, 53), (2.3, 54), (2.4, 55), (2.5, 56), (2.6, 57), (2.7, 58), (2.8, 59), (2.9, 60), (3.0, 61), (3.1, 62), (3.2, 63), (3.3, 64), (3.4, 65), (3.5, 66), (3.6, 67), (3.7, 68), (3.8, 69), (3.9, 70), (4.0, 71), (4.1, 73), (4.2, 75), (4.3, 77), (4.4, 79), (4.5, 81), (4.6, 83), (4.7, 85), (4.8, 87), (4.9, 89), (5.0, 91), (5.1, 93), (5.2, 95), (5.3, 97), (5.4, 99), (5.5, 100), (5.6, 98), (5.7, 96), (5.8, 94), (5.9, 92), (6.0, 90), (6.1, 88), (6.2, 86), (6.3, 84), (6.4, 82), (6.5, 80), (6.6, 78), (6.7, 76), (6.8, 74), (6.9, 72), (7.0, 50), (7.1, 49), (7.2, 48), (7.3, 47), (7.4, 46), (7.5, 45), (7.6, 44), (7.7, 43), (7.8, 42), (7.9, 41), (8.0, 40), (8.1, 39), (8.2, 38), (8.3, 37), (8.4, 36), (8.5, 35), (8.6, 34), (8.7, 33), (8.8, 32), (8.9, 31), (9.0, 10), (9.1, 9), (9.2, 8), (9.3, 7), (9.4, 6), (9.5, 5), (9.6, 4), (9.7, 3), (9.8, 2), (9.9, 1), (10.0, 0)]"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "Dictionary",
+      "offset": 16127,
+      "length": 681,
+      "value": "[(0, 0), (1, 3), (2, 6), (3, 8), (4, 10), (5, 13), (6, 15), (7, 18), (8, 20), (9, 21), (10, 23), (11, 25), (12, 27), (13, 29), (14, 31), (15, 33), (16, 35), (17, 56), (18, 57), (19, 58), (20, 59), (21, 60), (22, 61), (23, 62), (24, 63), (25, 88), (26, 90), (27, 92), (28, 94), (29, 96), (30, 98), (31, 100), (32, 99), (33, 97), (34, 95), (35, 93), (36, 91), (37, 89), (38, 87), (39, 86), (40, 85), (41, 84), (42, 83), (43, 82), (44, 81), (45, 80), (46, 79), (47, 78), (48, 77), (49, 76), (50, 75), (51, 74), (52, 73), (53, 72), (54, 71), (55, 70), (56, 69), (57, 68), (58, 67), (59, 66), (60, 65), (61, 64), (62, 55), (63, 54), (64, 53), (65, 52), (66, 51), (67, 50), (68, 49), (69, 48), (70, 47), (71, 46), (72, 45), (73, 44), (74, 43), (75, 42), (76, 41), (77, 40), (78, 39), (79, 38), (80, 37), (81, 36)]"
+    },
+    {
+      "filePath": "\/Users\/puffpuffpas\/Desktop\/project\/brain_openapi\/app-ios-brain-openapi\/BrainLib\/Algorithms.swift",
+      "kind": "Dictionary",
+      "offset": 16859,
+      "length": 947,
+      "value": "[(0.0, 0), (0.1, 1), (0.2, 2), (0.3, 3), (0.4, 4), (0.5, 5), (0.6, 6), (0.7, 7), (0.8, 8), (0.9, 9), (1.0, 10), (1.1, 11), (1.2, 12), (1.3, 13), (1.4, 14), (1.5, 15), (1.6, 16), (1.7, 17), (1.8, 18), (1.9, 19), (2.0, 31), (2.1, 32), (2.2, 33), (2.3, 34), (2.4, 35), (2.5, 36), (2.6, 37), (2.7, 38), (2.8, 39), (2.9, 40), (3.0, 41), (3.1, 42), (3.2, 43), (3.3, 44), (3.4, 45), (3.5, 46), (3.6, 47), (3.7, 48), (3.8, 49), (3.9, 50), (4.0, 71), (4.1, 73), (4.2, 75), (4.3, 77), (4.4, 79), (4.5, 81), (4.6, 83), (4.7, 85), (4.8, 87), (4.9, 89), (5.0, 91), (5.1, 93), (5.2, 95), (5.3, 97), (5.4, 99), (5.5, 100), (5.6, 98), (5.7, 96), (5.8, 94), (5.9, 92), (6.0, 90), (6.1, 88), (6.2, 86), (6.3, 84), (6.4, 82), (6.5, 80), (6.6, 78), (6.7, 76), (6.8, 74), (6.9, 72), (7.0, 70), (7.1, 69), (7.2, 68), (7.3, 67), (7.4, 66), (7.5, 65), (7.6, 64), (7.7, 63), (7.8, 62), (7.9, 61), (8.0, 60), (8.1, 59), (8.2, 58), (8.3, 57), (8.4, 56), (8.5, 55), (8.6, 54), (8.7, 53), (8.8, 52), (8.9, 51), (9.0, 30), (9.1, 29), (9.2, 28), (9.3, 27), (9.4, 26), (9.5, 25), (9.6, 24), (9.7, 23), (9.8, 22), (9.9, 21), (10.0, 20)]"
     }
   ]
 }

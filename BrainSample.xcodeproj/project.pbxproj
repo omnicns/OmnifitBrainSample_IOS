@@ -15,8 +15,8 @@
 		ED9E07872CA26EF80010EC39 /* BrainSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E07862CA26EF80010EC39 /* BrainSampleUITests.swift */; };
 		ED9E07892CA26EF80010EC39 /* BrainSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E07882CA26EF80010EC39 /* BrainSampleUITestsLaunchTests.swift */; };
 		ED9E07D92CA396BE0010EC39 /* BrainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9E07D82CA396BE0010EC39 /* BrainManager.swift */; };
-		EDC26E992CA51906009D675A /* BrainLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDC26E982CA51906009D675A /* BrainLib.xcframework */; };
-		EDC26E9A2CA51906009D675A /* BrainLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDC26E982CA51906009D675A /* BrainLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EDE3EFAC2CDDB32500598067 /* BrainLib.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDE3EFAB2CDDB32500598067 /* BrainLib.xcframework */; };
+		EDE3EFAD2CDDB32500598067 /* BrainLib.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EDE3EFAB2CDDB32500598067 /* BrainLib.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		EDC26E9B2CA51906009D675A /* Embed Frameworks */ = {
+		EDE3EFA42CDDAEB100598067 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				EDC26E9A2CA51906009D675A /* BrainLib.xcframework in Embed Frameworks */,
+				EDE3EFAD2CDDB32500598067 /* BrainLib.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -63,7 +63,7 @@
 		ED9E07882CA26EF80010EC39 /* BrainSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrainSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		ED9E07D82CA396BE0010EC39 /* BrainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BrainManager.swift; path = BrainSample/BrainManager.swift; sourceTree = SOURCE_ROOT; };
 		ED9E07DA2CA39A4E0010EC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		EDC26E982CA51906009D675A /* BrainLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BrainLib.xcframework; path = BrainSample/Frameworks/BrainLib.xcframework; sourceTree = "<group>"; };
+		EDE3EFAB2CDDB32500598067 /* BrainLib.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = BrainLib.xcframework; path = BrainSample/Frameworks/BrainLib.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDC26E992CA51906009D675A /* BrainLib.xcframework in Frameworks */,
+				EDE3EFAC2CDDB32500598067 /* BrainLib.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,7 @@
 		ED9E07B62CA2AFBB0010EC39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				EDC26E982CA51906009D675A /* BrainLib.xcframework */,
+				EDE3EFAB2CDDB32500598067 /* BrainLib.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 				ED9E07642CA26EF60010EC39 /* Sources */,
 				ED9E07652CA26EF60010EC39 /* Frameworks */,
 				ED9E07662CA26EF60010EC39 /* Resources */,
-				EDC26E9B2CA51906009D675A /* Embed Frameworks */,
+				EDE3EFA42CDDAEB100598067 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
